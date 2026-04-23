@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travisa Flight</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+    <h1>Travisa Flight</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#booking">Book</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="overlay"></div>
+
+    <!-- BACKGROUND IMAGE -->
+    <img src="images/airplane-sky.jpg" class="hero-bg" alt="Airplane in sky">
+
+    <div class="hero-content">
+        <h2>Find & Book Flights Instantly</h2>
+        <p>Fast • Reliable • Affordable travel across Ghana & beyond</p>
+
+        <div class="booking-box" id="booking">
+
+            <div class="tabs">
+                <button class="tab active">Round Trip</button>
+                <button class="tab">One Way</button>
+            </div>
+
+            <div class="form-grid">
+
+                <input type="text" id="from" placeholder="From (e.g. Accra)">
+                <input type="text" id="to" placeholder="To (e.g. Kumasi)">
+
+                <input type="date" id="depart">
+                <input type="date" id="returnDate">
+
+                <select id="passengers">
+                    <option value="">Passengers</option>
+                    <option>1</option><option>2</option><option>3</option>
+                    <option>4</option><option>5+</option>
+                </select>
+
+                <select id="travelClass">
+                    <option>Economy</option>
+                    <option>Business</option>
+                </select>
+
+            </div>
+
+            <button class="search-btn" onclick="sendToWhatsApp()">Search Flights</button>
+
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES WITH IMAGES -->
+<section class="features">
+
+    <div class="card">
+        <img src="images/booking.jpg" alt="Fast Booking">
+        <p>✈️ Fast Booking</p>
+    </div>
+
+    <div class="card">
+        <img src="images/cheap-flights.jpg" alt="Best Prices">
+        <p>💰 Best Prices</p>
+    </div>
+
+    <div class="card">
+        <img src="images/world-map.jpg" alt="Global Routes">
+        <p>🌍 Global Routes</p>
+    </div>
+
+    <div class="card">
+        <img src="images/support.jpg" alt="Support">
+        <p>📞 24/7 Support</p>
+    </div>
+
+</section>
+
+<!-- FLIGHT GALLERY -->
+<section class="gallery">
+    <h2>Popular Destinations</h2>
+
+    <div class="gallery-grid">
+        <img src="images/dubai.jpg" alt="Dubai">
+        <img src="images/london.jpg" alt="London">
+        <img src="images/newyork.jpg" alt="New York">
+        <img src="images/paris.jpg" alt="Paris">
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 0550452721</p>
+    <p>📧 cagyeibonsu@gmail.com</p>
+    <p>📍 Kumasi AH-0836-5685</p>
+</section>
+
+<footer>
+    <p>© 2026 Travisa Flight</p>
+</footer>
+
+<a href="https://wa.me/233550452721" class="whatsapp">💬</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
